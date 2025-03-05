@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container {
+            border: 1px solid brown;
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content:space-evenly;
+            align-items: stretch;
+            align-content: space-around;
+            background-color: yellow;
+        }
+        .items {
+            color: white;
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            
+        }
+        .item {
+            color: black;
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
 </head>
+<!--FLEX DIRECTION = row, row-reverse, column, column-reverse-->
+<!--FLEX WRAP = wrap, nowrap, wrap-reverse-->
+<!--FLEX FLOW = Direction & Wrap, Ex. flex-flow: row wrap-->
+<!--JUSTIFY CONTENT = -->
+<!--ALIGN ITEMS-->
+<!--ALIGN CONTENT-->
 <body>
     <div id="container">
         <div class="items">1</div>
-        <div class="items">2</div>
+        <div class="item">2</div>
         <div class="items">3</div>
+        <div class="item">4</div>
+        <div class="items">5</div>
+        <div class="item">6</div>
+        <div class="items">7</div>
+        <div class="item">8</div>
+        <div class="items">9</div>
+        <div class="item">10</div>
+        <div class="items">11</div>
+        <div class="item">12</div>
     </div>
 </body>
 </html>
