@@ -1,0 +1,41 @@
+.container {
+    display:flex;
+    flex-flow: row wrap;
+}
+.items {
+    background-color: greenyellow;
+    padding: 5px;
+    flex:1;
+}
+@media print {
+    .items {
+        background-color: red;
+        font-size: 100px;
+        color: red;
+    }
+}
+@media all and (orientation:landscape) {
+    .items {
+        background-color:red;
+    }
+}
+@media screen and (max-width:480px) {
+    body {
+        background-color: blueviolet;
+    }    
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    body {
+        background-color: darkgreen;
+    }  
+}
+@media screen and (min-width:769px) and (max-width:1279px) {
+    body {
+        background-color: palevioletred;
+    }  
+}
+@media screen and (min-width:1280px) {
+    body {
+        background-color: khaki;
+    }  
+}
